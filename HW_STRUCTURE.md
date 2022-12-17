@@ -53,7 +53,17 @@
 
 3. В `main` заведите сканнер, не забудьте его заимпортить
 
-4. Запросите у пользователя цену и вес товара, сохраните данные в переменные:
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    }
+}
+```
+
+4. Запросите в `main` у пользователя цену и вес товара, сохраните данные в переменные:
 
 ```java
 System.out.print("Введите цену товара (в руб.):");
@@ -61,7 +71,23 @@ int price = scanner.nextInt();
 ...
 ```
 
-5. Создайте статический метод для расчёта пошлины, разместите его до или после метода `main`
+5. Создайте статический метод для расчёта пошлины, разместите его до или после метода `main` (`???` замените на нужный java-код):
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ...
+    }
+    
+    public ??? ??? calculateCustoms(???) {
+        ...
+        return ???;
+    }
+}
+```
 
 6. В `main` вызовите этот метод, передав считанные от пользователя данные
 
